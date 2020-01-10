@@ -3,7 +3,7 @@
 > 열심히 작성한 코드가 겨우 한줄 밖에 나가지 못했어도 나는 포기하지 않는다.
 
 ## SLIDE bar를 왼쪽으로 보내고 간단하고 미니멀한 블로그 형식 홈페이지 만들기
----
+
 
 1. 상단에 고정하는 header처럼 마찬가지로 position:fixed를 사용한다  
 ````html
@@ -46,7 +46,7 @@
 
 
 ## 미니블로그 레이아웃을 보고 싶다면?
----
+
 1. clone하여 로컬저장소에 파일을 전송하거나 download.zip 을 이용한다.  
     (You have to clone or download.zip)
 2. <index.html> 파일을 클릭한다.  
