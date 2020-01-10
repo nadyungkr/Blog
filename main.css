@@ -8,7 +8,7 @@ body{
 }
 
 a{
-    color:#8592a6;
+    color:#fff;
 
 }
 
@@ -22,16 +22,16 @@ a{
     position:fixed;
     width:280px;
     overflow-x:hidden;
-    overflow-y:auto;
+    overflow-y:scroll;
     height:100%;
-    background:#cce4e5;
+    background:#92c05b;
     z-index:1100;
 }
 
 .profilecard{
     width:220px;
     height:300px;
-    margin:80px auto;
+    margin:80px auto 40px;
     outline:1px solid #fff;
     text-align:center;
     overflow:hidden;
@@ -50,18 +50,17 @@ a{
 
 .userinfo{
     margin-top:30px;
-    color:#8592a6;
+    color:#fff;
 }
 
-.userinfo h1{
+.userinfo h2{
     font-size:14px;
     font-weight:800;
 
 }
 
-.userinfo h2{
+.userinfo p{
     padding-top:8px;
-    font-size:13px;
     letter-spacing:2px;
 }
 
@@ -72,15 +71,17 @@ nav ul li{
 
 nav ul li a{
     display:block;
-    margin:10px 0 10px 4px;
+    margin:5px 0 10px 5px;
     width: 220px;
     height: 50px;
-    font-size:14px;
     line-height:50px;
     text-indent:30%;
     letter-spacing:2px;
-    position:relative;
+    position:relative; 
+    color:rgba(255, 255, 255, .8);
+    font-weight:900;
 }
+
 
 nav ul li a:before{
     content:"";
@@ -88,22 +89,26 @@ nav ul li a:before{
     top:50%;
     transform:translateY(-50%);
     left:30px;
-    width:16px;
+    width:20px;
     height:20px;
-    background:url(images/icon-school.svg) no-repeat;
+    background:url(images/icon-heart.png) no-repeat;
+    background-size:cover;
+    opacity:0.3;
 
 }
 
 nav ul li a:hover{
-    color:#ff7f45;
+    color:#fff;
 }
 
-nav ul li a:hover::before{
-    background-position:-34px 0;
+nav ul li a:hover::before, nav ul li a:active::before{
+    background:url(images/icon-heart4.png) no-repeat;
+    background-size:cover;
+    opacity:1;
 }
 
 /**/
-.contentwrap{
+.content{
     margin-left:280px;
     width:820px;
     height:aut0;
@@ -111,20 +116,156 @@ nav ul li a:hover::before{
 
 }
 
+
 .homecontainer{
     width:820px;
-    height:873px;
-    padding:100px 0;
-    outline:1px solid red;
+    height:1100px;
 }
 
-.contentwrap > ul > li{
+
+.bgcircle {
+	background:url(images/home.jpg) 50% 0% no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgcircle h1{
+    position:absolute;
+    top:28%;
+    left:50%;
+    transform:translateX(-50%);
+    color:#fff;
+    font-size:70px;
+    text-align: center;
+    z-index: 800;
+    text-shadow: 2px 1px 4px rgba(0,0,0,.8);
+}
+
+
+.bgcircle ul{
+	position: relative;
+	z-index: 1;
+    width:800px;
+    height:1090px;
+}
+	
+.circle {
+    z-index:0;
+    position: absolute;
+    top:-360px;
+    left:-360px;
+    width:1500px;
+    height:1500px;
+    border-radius: 50%;
+	background: rgba(255, 255, 255, .1);
+	transform: scale(0);
+	opacity: 0;
+	transform-origin: 50% 50%;
+    animation: pulse 4.5s cubic-bezier(.5,.5,0,1) infinite;
+}
+		
+.circle2 {
+    background: rgba(255, 255, 255, .05);
+	animation: pulse 3.8s cubic-bezier(.5,.5,0,1) infinite;
+    
+}
+		
+.circle3 {
+    background: rgba(255, 255, 255, .2);
+    animation: pulse 3s cubic-bezier(.5,.5,0,1) infinite;
+
+}
+	
+
+
+@keyframes pulse {
+	
+	35% {
+		opacity: 0.3;
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+	
+}
+
+
+.content > ul > li{
     width:820px;
-    height:873px;
+    height:1000px;
     outline:1px solid blue;
+    padding:0 5%;
+    box-sizing:border-box;
+    color:#333;
 }
 
-.contentwrap > ul > li > h2{
-    font-size:23px;
+.content> ul > li > h2{
+    padding-top:10%;
+    padding-bottom:4%;
+    font-size:30px;
     color:#111;
-    padding:10%;
+}
+
+
+
+/*#menu1*/
+
+
+#menu1 table {
+    width:100%;
+}
+
+#menu1 table td{
+    padding-bottom:2%;
+}
+
+#menu1 table td:first-child{
+    width:20%;
+    padding-left:5%;
+}
+
+#menu1 a{
+    color:#333;
+    font-style: italic;
+    transition:all .3s;
+}
+
+#menu1 a:hover{
+    color:#92c05b;
+
+}
+
+#menu1 > div > div{
+    width:100%;
+    height:46px;
+    line-height:40px;
+    box-shadow: 6px 5px 3px rgba(26,26,26,.2);
+    box-sizing:border-box;
+    margin-bottom:4%;
+    text-indent: 20px;
+    border-bottom:6px solid #92c05b;
+}
+
+
+/*#menu 2*/
+
+
+
+
+#menu2 > div {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+} 
+
+#menu2 > div > section {
+    outline:1px solid red;
+    width:360px;
+    height:280px;
+}

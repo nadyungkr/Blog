@@ -13,13 +13,15 @@
     <div class="wrap"><!--wrap-->
         <div class="sidebar">
             <div class="profilecard">
-                <div class="photo">
-                    <img src="images/placeholder.png" alt="profile_photo"/><!--background : place holder 만들기-->
-                </div> <!--팝업창으로 이미지 크게 할 수 있게 하기-->
-                <div class="userinfo">
-                    <h1>현 정</h1>
-                    <h2>email@nadyung.kr</h2>
-                </div><!--userinfo-->
+                <a href="#">
+                    <div class="photo">
+                        <img src="images/placeholder.png" alt="profile_photo"/><!--background : place holder 만들기-->
+                    </div> <!--팝업창으로 이미지 크게 할 수 있게 하기-->
+                    <div class="userinfo">
+                        <h2>현 정</h2>
+                        <p>email@nadyung.kr</p>
+                    </div><!--userinfo-->
+                </a>
             </div><!--profile card-->
             <nav>
                 <ul>
@@ -27,34 +29,109 @@
                     <li><a href="#menu2">FAVORITE</a></li>
                     <li><a href="#menu3">SKILLS</a></li>
                     <li><a href="#menu4">PROJECTS</a></li>
-                    <li><a href="#menu5">ESSAYS</a></li>
-                    <li><a href="#menu6">DESIGNS</a></li>
+                    <li><a href="#menu5">DESIGNS</a></li>
                 </ul>
             </nav>
         </div><!--sidebar-->
-        <section class="contentwrap"><!--marincontents-->
-            <div class="homecontainer"></div>
+        <section class="content"><!--marincontents-->
+            <div class="homecontainer">
+                <div class="bgcircle">
+                    <h1>Let me introduce myself.</h1>
+                    <ul>
+                        <li class="circle circle1"></li>
+                        <li class="circle circle2"></li>
+                        <li class="circle circle3"></li>
+                    </ul>
+                </div>
+            </div>
             <ul>
                 <li id="menu1"><h2>MY PROFILE</h2>
-                    
-                </li>
-                <li id="menu2"><h2>FAVORITE</h2>
+                    <table>
+                        <colgroup>
+                            <col/>
+                            <col/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                               <td>Name</td>
+                               <td>나듕이</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Birth</td>
+                                <td>1996 08 06</td>
+                             </tr>
+                             <tr>
+                                <td>Address</td>
+                                <td>경기도 성남시 분당구 야탑동</td>
+                             </tr>
+                             <tr>
+                                <td>Git</td>
+                                <td><a href="https://github.com/nadyungkr">Nadyungkr Github</a></td>
+                             </tr>
+                             <tr>
+                                <td>Phone</td>
+                                <td>000-0000-0000</td>
+                             </tr>
+                             <tr>
+                                <td>Job</td>
+                                <td>프론트엔드, 웹퍼블리셔</td>
+                             </tr>
+                        </tbody>
+                    </table>
+                    <h2>STRENGTH</h2>
+                    <div>
+                        <div>
+                            <p>동료들이 지지할 수 있는 신뢰와 리더쉽</p>
+                        </div>
+                        <div>
+                            <p>무엇이든 열정을 가지고 심혈을 기울이며 완수를 목표로 하는 성격</p>
+                        </div>
+                        <div>
+                            <p>실패를 두려워하지 않고 과감하게 뛰어드는 도전성</p>
+                        </div>
+                        <div>
+                            <p>끝까지 포기 하지 않으려는 자세와 태도</p>
+                        </div>
+                        <div>
+                            <p>협업에 필요한 원활한 커뮤니케이션 능력</p>
+                        </div>     
 
+                    </div>
                 </li>
-                <li id="menu3"><h2>SKILLS</h2>
+                <li id="menu2"><h2>SKILLS</h2>
+                    <div>
+                        <section class="photoshop">
+
+                        </section>
+                        <section class="illustrator">
+
+                        </section>
+                        <section class="html5">
+
+                        </section>
+                        <section class="css3">
+
+                        </section>
+                        <section class="git">
+
+                        </section>
+                        <section class="javascript">
+
+                        </section>
+                    </div>
+                </li>
+                <li id="menu3"><h2>DESIGNS</h2>
 
                 </li>
                 <li id="menu4"><h2>PROJECTS</h2>
 
                 </li>
-                <li id="menu5"><h2>ESSAYS</h2>
-
-                </li>
-                <li id="menu6"><h2>DESIGNS</h2>
+                <li id="menu5"><h2>FAVORITE</h2>
 
                 </li>
             </ul>
-        </section>
-    </div><!--wrap-->
+    </section>
 </body>
 </html>
