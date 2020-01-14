@@ -1,11 +1,41 @@
+/*scrollbar*/
+html{
+    --scrollbarBG:#fff;
+    --thumbBG:#92c05b;
+}
+
+.scrollb::-webkit-scrollbar{
+    width:20px;
+    height:20px;
+}
+
+.scrollb{
+    scrollbar-width:thin;
+    scrollbar-color:var(--thumbBG) var(--scrollbarBG);
+    scroll-behavior: smooth;
+}
+
+.scrollb::-webkit-scrollbar-track{
+    background:var(--scrollbarBG);
+
+}
+
+.scrollb::-webkit-scrollbar-thumb{
+    background:var(--thumbBG);
+    border-radius:20px;
+    border:3px solid var(--scrollbarBG);
+}
+
+/*body*/
+
 body{
     font-size:12px; 
     color:#ccc;
     background:#fff;
     font-family: 'Noto Sans', sans-serif;
     min-width:1100px;
-
 }
+
 
 a{
     color:#fff;
@@ -15,6 +45,7 @@ a{
 .wrap{
     width:1100px;
     margin:0 auto;
+    box-shadow: .5rem .5rem 3rem rgba(26,26,26,.5);
 }
 
 
@@ -22,11 +53,12 @@ a{
     position:fixed;
     width:280px;
     overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-y:auto;
     height:100%;
     background:#92c05b;
     z-index:1100;
 }
+
 
 .profilecard{
     width:220px;
@@ -201,6 +233,7 @@ nav ul li a:hover::before, nav ul li a:active::before{
     padding:0 5%;
     box-sizing:border-box;
     color:#333;
+    overflow:hidden;
 }
 
 .content> ul > li > h2{
@@ -421,6 +454,11 @@ nav ul li a:hover::before, nav ul li a:active::before{
 
 }
 
+#menu3 > div > div:hover{
+    cursor: pointer;
+
+}
+
 #menu3 > div > div:hover p{
     transform:scale(1.2);
 }
@@ -444,3 +482,119 @@ nav ul li a:hover::before, nav ul li a:active::before{
 }
 
 /*menu4*/
+#menu4 {
+    height:1380px;
+    position:relative;
+}
+
+#menu4 > div > div{
+    color:#fff;
+    font-size:2.0em;
+    font-weight:800;
+    position:absolute;
+    min-width:248px;
+    min-height:288px;
+    background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.7)),url(images/holder.jpg)60% 50% no-repeat;
+    background-size:cover;
+    border-radius:16px;
+}
+
+
+#menu4 > div > ul {
+    width:740px;
+    display:flex;
+    flex-flow:row nowrap;
+    padding-top:1em;
+    margin:2em 0 3em 248px;
+}
+
+#menu4 > div > ul > li {
+    font-size:1.2em;
+    min-width: 200px;
+    min-height: 240px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #93c05b;
+    box-shadow: -.5em 0 3px rgba(26,26,26,.5);
+    display: flex;
+    flex-direction: column;
+    margin:0 -7em;
+    transition:.8s;
+}
+
+#menu4 > div > ul > li:hover {
+    cursor: pointer;
+    margin-left:-4.5em;
+    margin-right:3em;
+    transition:1s;
+}
+
+#menu4 > div > ul > li:first-child {
+    box-shadow: none;
+    margin-left:0;
+}
+
+#menu4 > div > ul > li:first-child:hover{
+    box-shadow:-.5em 0 3px rgba(26,26,26,.5);
+    left:0;
+}
+
+#menu4 > div > ul > li:last-child:hover{
+    box-shadow:-.5em 0 3px rgba(26,26,26,.5);
+    margin-left:-6em;
+    margin-right:0;
+}
+
+#menu4 > div > ul > li > span, #menu4 > div > ul > li > h4{
+    opacity:0;
+}
+
+#menu4 > div > .clonecoding > li:first-child{
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/clone11.jpg)30% 50% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .clonecoding > li:nth-child(2){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/clone1.jpeg)no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .clonecoding > li:nth-child(3){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/clone2.png)30% 50% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .clonecoding > li:nth-child(4){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/clone55.jpg)10% 50% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .clonecoding > li:nth-child(5){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/clone4.jpg)30% 30% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .Apppage > li:first-child{
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/app1.png)20% 20% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .Apppage > li:nth-child(2){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/app2.png)no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .Apppage > li:nth-child(3){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/app3.jpg)20% 50% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .handmade > li:first-child{
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/hand1.jpg)70% 50% no-repeat;
+    background-size:cover;
+}
+
+#menu4 > div > .handmade > li:nth-child(2){
+    background:linear-gradient(0deg,rgba(0,0,0,.2), rgba(0,0,0,.2)),url(images/home.jpg)50% 50% no-repeat;
+    background-size:cover;
+}
