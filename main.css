@@ -483,22 +483,45 @@ nav ul li a:hover::before, nav ul li a:active::before{
 
 /*menu4*/
 #menu4 {
-    height:1380px;
+    height:1200px;
     position:relative;
 }
 
 #menu4 > div > div{
+    position:absolute;
     color:#fff;
     font-size:2.0em;
     font-weight:800;
-    position:absolute;
     min-width:248px;
     min-height:288px;
     background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.7)),url(images/holder.jpg)60% 50% no-repeat;
     background-size:cover;
     border-radius:16px;
+    text-align:center;
 }
 
+#menu4 > div > div:first-child{
+    top:180px; /*+350px;*/
+}
+
+#menu4 > div > div:nth-child(3){
+    top:515px; /*+350px;*/
+}
+
+#menu4 > div > div:nth-child(5){
+    top:850px; /*+350px;*/
+}
+
+#menu4 > div > div > h3{
+    font-size:1.6em;
+    margin:30% 0 10%;
+    font-style:italic;
+}
+
+#menu4 > div > div > p{
+    font-size:.8em;
+    font-weight:400;
+}
 
 #menu4 > div > ul {
     width:740px;
