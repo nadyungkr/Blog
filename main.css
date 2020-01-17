@@ -29,6 +29,7 @@ html{
 /*body*/
 
 body{
+    overflow-x:hidden;
     font-size:12px; 
     color:#ccc;
     background:#fff;
@@ -67,6 +68,7 @@ a{
     outline:1px solid #fff;
     text-align:center;
     overflow:hidden;
+    position:relative;
 }
 
 
@@ -78,6 +80,20 @@ a{
     margin-top:50px;
     padding:5px;
     
+}
+
+.photo p{
+    content:"";
+    background:url(images/pro2.png)35% 30% no-repeat;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    position:absolute;
+    top:55px;
+    transform:translateX(-50%);
+    left:50%;
+    z-index:9999;
+
 }
 
 .userinfo{
@@ -369,8 +385,8 @@ nav ul li a:hover::before, nav ul li a:active::before{
 
 #menu2 section > p{
     font-size:1.2em;
-    outline:1px solid rosybrown;
     margin: 8% 5% 0;
+    text-align:justify;
 }
 
 /*menu3*/
@@ -494,7 +510,7 @@ nav ul li a:hover::before, nav ul li a:active::before{
     font-weight:800;
     min-width:248px;
     min-height:288px;
-    background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.7)),url(images/holder.jpg)60% 50% no-repeat;
+    background:linear-gradient(0deg,rgba(100,100,100,.7),rgba(100,100,100,.7)),url(images/holder.jpg)60% 50% no-repeat;
     background-size:cover;
     border-radius:16px;
     text-align:center;
